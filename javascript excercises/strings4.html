@@ -1,20 +1,38 @@
 <html>
 <head>
+        <meta name ="viewport" content ="width=device-width, initial-scale=1">
+    <style>* {box-sizing: border-box;} </style>
+ <title>HOME</title>
+ <link rel="stylesheet" type="text/css" href="../style.css">
 
 </head>
 <body>
+        <h1>
+                <center><a href = "../Index.html"> HOME </a> &nbsp
+                <a href = "../About.html">  ABOUT  </a> &nbsp
+                <a href = "../ProjectList.html"> PROJECT LIST </a> &nbsp
+                <a href = "../excercises.html"> EXCERCISES  </a></center> &nbsp
+            </h1> 
 
         <p>enter number and click OK </p>
-        <input id="id1" type="number">
+        <input id="id1" type="string">
         <button onclick="myFunction()">OK</button>
         <p id="demo"></p>
 
         <script>   
 
          function myFunction() {
-            document.getElementById("demo").innerHTML = id1.value;   
+            var i = id1.value;
+            var triples = ['aaa', 'bbb', 'ccc', 'ddd', 'eee', 'fff', 'ggg', 'hhh', 'iii', 'jjj', 'kkk', 'lll', 'mmm', 'nnn', 'ooo', 'ppp', 'qqq','rrr', 'sss', 'ttt', 'uuu', 'vvv', 'www', 'xxx', 'yyy', 'zzz'] 
+            var numOfTriples = 0;
+
+            for(var x)
+            if (i > 33){
+               document.getElementById("demo").innerHTML = "more than 33";   
                 }
+                    else {document.getElementById("demo").innerHTML = " not more than 33";}}
  
             </script>
 </body>
 </html>
+
