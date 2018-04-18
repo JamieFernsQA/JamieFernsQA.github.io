@@ -1,0 +1,58 @@
+<html>
+<head>
+        <meta name ="viewport" content ="width=device-width, initial-scale=1">
+    <style>* {box-sizing: border-box;} </style>
+ <title>HOME</title>
+ <link rel="stylesheet" type="text/css" href="../style.css">
+
+</head>
+<body>
+        <h1>
+                <center><a href = "../Index.html"> HOME </a> &nbsp
+                <a href = "../About.html">  ABOUT  </a> &nbsp
+                <a href = "../ProjectList.html"> PROJECT LIST </a> &nbsp
+                <a href = "../excercises.html"> EXCERCISES  </a></center> &nbsp
+            </h1> 
+        <p>input details and click OK:</p>
+        
+      
+
+        <button onclick="CreateFunction()">create</button>
+        <button onclick="WriteFunction()">Write To</button>
+        <button onclick="DeleteFunction()">Delete</button>
+        
+        
+        
+
+        <script>
+            
+ function CreateFunction() {
+     //create div and text box
+    var newDiv = document.createElement("div1"); 
+    var newInput = document.createElement("input"); 
+   // put textbox into div
+  newDiv.appendChild(newInput); 
+  //add div/textbox combo to dom 
+  var currentDiv = document.getElementById("div"); 
+  document.body.insertBefore(newDiv, currentDiv);
+  newInput.setAttribute("id", "TextInput" ) 
+                                       
+                }
+                function WriteFunction(){
+                    document.getElementById("TextInput")
+                    document.write("TextInput.value"); 
+                    //create div and text box
+                    }
+                function DeleteFunction(){
+
+                   document.getElementById("input")
+                    element.remove(div);
+
+                }
+
+                </script>
+
+<p id="demo"></p>
+
+</body>
+</html>
