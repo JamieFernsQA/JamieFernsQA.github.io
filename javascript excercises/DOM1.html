@@ -27,6 +27,8 @@
         <script>
             
  function CreateFunction() {
+
+     
      //create div and text box
     var newDiv = document.createElement("div1"); 
     var newInput = document.createElement("input"); 
@@ -34,19 +36,20 @@
   newDiv.appendChild(newInput); 
   //add div/textbox combo to dom 
   var currentDiv = document.getElementById("div"); 
+
   document.body.insertBefore(newDiv, currentDiv);
   newInput.setAttribute("id", "TextInput" ) 
                                        
                 }
                 function WriteFunction(){
                     document.getElementById("TextInput")
-                    document.write("TextInput.value"); 
+                    document.getElementById("demo").innerHTML =TextInput.value; 
                     //create div and text box
                     }
                 function DeleteFunction(){
 
-                   document.getElementById("TextInput")
-                    element.remove(div);
+                   document.getElementById("demo").innerHTML ="";
+                    
 
                 }
 
